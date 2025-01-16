@@ -1,8 +1,8 @@
-with open('thameshello.txt', 'w') as f:
-    f.write('hi thames! this is a test')
-    f.write('\n')
-    
-with open('thameshello.txt') as f:
-    full_text = f.read()
+import csv
 
-print(full_text)
+with open('testwrite.csv', 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(['col1', 'col2'])
+    writer.writerow(['val1', 'val2'])
+    writer.writerow(['val1', 'val2'])
+    writer.writerow(['val1', 'val2'])
